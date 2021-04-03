@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      httpd: 4.2
+      aws/codebuild/standard:5.0	
   pre_build:
     commands:
       - apt install -y apache2
