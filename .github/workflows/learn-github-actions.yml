@@ -22,6 +22,8 @@ jobs:
       - run: npm install -g bats
       # get version of bats
       - run: bats -v
-      env: 
-        SECRET_ENV: ${{ secrets.SECRET_WORD }}
-      - run: echo #SECRET_ENV
+      - shell: bash
+        env: 
+          SECRET_ENV: ${{ secrets.SECRET_WORD }}
+        run: |
+          echo $SECRET_ENV
