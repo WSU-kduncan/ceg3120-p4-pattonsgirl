@@ -1,3 +1,4 @@
+# Note: because CodeBuild is not enabled for AWS educate accounts, this file has been abandoned.
 version: 0.2
 phases:
   install:
