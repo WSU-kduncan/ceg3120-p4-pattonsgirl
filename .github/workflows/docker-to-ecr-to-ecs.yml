@@ -1,6 +1,11 @@
 name: Deploy to Amazon ECS
 # Based on https://docs.github.com/en/actions/guides/deploying-to-amazon-elastic-container-service
 on:
+  # trying something
+  push:
+    tags:
+      - 'v*'
+  # was just this
   release:
     types: [ created ]
 
